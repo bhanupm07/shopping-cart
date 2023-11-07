@@ -21,12 +21,16 @@ export default function SingleProduct({ prod }) {
       <img src={prod.image} alt="product" className="card-img" />
       <div className="name-price">
         <span>{prod.name}</span>
-        <span>${prod.price}</span>
+        <span className="price">${prod.price}</span>
       </div>
       {cart.includes(prod) ? (
-        <button onClick={handleRemoveClick}>Remove from Cart</button>
+        <button onClick={handleRemoveClick} className="btn">
+          Remove from Cart
+        </button>
       ) : (
-        <button onClick={handleAddClick}>Add to Cart</button>
+        <button onClick={handleAddClick} className="btn">
+          Add to Cart
+        </button>
       )}
     </div>
   );

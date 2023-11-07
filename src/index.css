@@ -47,12 +47,33 @@ html {
 
 .card-img {
   width: 100%;
+  border-radius: 0.5rem;
 }
 
 .name-price {
   display: flex;
   justify-content: space-between;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
+  margin: 1rem 0 2rem;
+}
+
+.price {
+  font-weight: 900;
+}
+
+.btn {
+  background-color: #292929;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 2rem;
+  padding: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.btn:active {
+  transform: scale(0.9);
 }
 
 .products-div {
@@ -61,4 +82,12 @@ html {
   gap: 4rem;
   flex-wrap: wrap;
   padding: 2rem;
+}
+
+/* ====== CART ====== */
+
+.total {
+  font-size: 4rem;
+  text-align: center;
+  margin: 1rem;
 }
