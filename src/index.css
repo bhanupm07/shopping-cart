@@ -1,13 +1,64 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  font-size: 62.5%;
+}
+
+/* ====== HEADER ====== */
+
+.title {
+  font-size: 4rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  background-color: #292929;
+  font-size: 5rem;
+  padding: 2rem 0;
+}
+
+.icons {
+  transition: transform 0.2s;
+  color: white;
+}
+
+.icons:active {
+  transform: scale(0.9);
+}
+
+/* ====== SINGLE PRODUCT CARD ====== */
+
+.card-main {
+  width: 30rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  border: 0.1rem solid black;
+  border-radius: 0.5rem;
+}
+
+.card-img {
+  width: 100%;
+}
+
+.name-price {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5rem;
+}
+
+.products-div {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  flex-wrap: wrap;
+  padding: 2rem;
 }
